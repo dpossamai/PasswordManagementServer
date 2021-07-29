@@ -14,4 +14,4 @@ Para executar o servidor:
 => java -jar PasswordManagement-1.0-SNAPSHOT.jar
 
 
-O servidor possui URLs acessadas apenas por usuário logado. O método de autenticação utilizado é o JWT.
+O servidor possui URLs restritas para o usuário GERENTE. O método de autenticação utilizado é o JWT.
