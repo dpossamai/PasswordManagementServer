@@ -7,4 +7,6 @@ Passos para subir a aplicação:
 
 
 
-Para executar:
+Para executar o servidor:
+
+java -jar <.jar>
