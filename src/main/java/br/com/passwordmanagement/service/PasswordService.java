@@ -42,7 +42,6 @@ public class PasswordService {
         boolean p = Priority.P.equals(passRequest.getPriority());
         List<Password> mostRecentPasswordByPriority = repository.findMostRecentPasswordByPriority(p, PageRequest.of(0, 1, Sort.by(Sort.Direction.DESC, "number")));
         Password newPassword = new Password();
-        newPassword.setNext(false);
         newPassword.setPriority(p);
         if(!mostRecentPasswordByPriority.isEmpty()){
             newPassword.setNumber(mostRecentPasswordByPriority.get(0).getNumber() + 1);
@@ -53,8 +52,4 @@ public class PasswordService {
         return passRequest.getPriority().name().toString() + String.format("%04d" , saved.getNumber());
     }
 
-    public static void main(String[] args) {
-        String padded = String.format("%04d" , 110);
-        System.out.println("Integer number left padded with zero : " + padded);
-    }
 }

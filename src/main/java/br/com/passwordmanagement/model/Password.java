@@ -17,9 +17,6 @@ public class Password {
     @Column(name = "priority")
     private boolean priority;
 
-    @Column(name = "next")
-    private boolean next;
-
     public Long getId() {
         return id;
     }
@@ -44,12 +41,5 @@ public class Password {
         this.priority = priority;
     }
 
-    public boolean isNext() {
-        return next;
-    }
-
-    public void setNext(boolean next) {
-        this.next = next;
-    }
 
 }
