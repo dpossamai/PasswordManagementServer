@@ -20,3 +20,6 @@ Para executar o servidor:
 
 - O servidor possui URLs restritas para o usuário GERENTE. 
 - O método de autenticação utilizado é o JWT.
+
+
+Para executar a interface, ver o README do projeto https://github.com/dpossamai/PasswordManagementUI/blob/main/README.md
